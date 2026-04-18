@@ -646,14 +646,14 @@ export function QRCodeGenerator({
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="relative group w-full max-w-sm"
+          className="relative group w-full max-w-md"
         >
           {/* Subtle 3D background shadow effect */}
           <div className="absolute inset-0 bg-premium-accent/20 rounded-[40px] blur-[40px] -z-10 transition-all duration-700 group-hover:scale-110 group-hover:bg-premium-accent/30" />
           
           <div className="neo-shadow p-1 bg-white/10 rounded-[40px] border border-white/10 overflow-hidden">
-            <div className="bg-white p-8 rounded-[36px] flex items-center justify-center transition-transform duration-700 hover:scale-[1.02]">
-              <div ref={qrRef} className="max-w-full" />
+            <div className="bg-white p-6 sm:p-8 rounded-[36px] flex items-center justify-center transition-transform duration-700 hover:scale-[1.02]">
+              <div ref={qrRef} className="w-full flex items-center justify-center [&>canvas]:max-w-full [&>canvas]:h-auto [&>svg]:max-w-full [&>svg]:h-auto" />
             </div>
           </div>
 
