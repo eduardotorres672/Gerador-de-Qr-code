@@ -122,4 +122,3 @@ npm run build
 Este projeto está sob a licença [MIT](https://opensource.org/licenses/MIT).
 
 ---
-*Gerado com ❤️ para um futuro mais minimalista e acessível.*
