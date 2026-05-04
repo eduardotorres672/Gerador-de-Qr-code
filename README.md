@@ -1,124 +1,101 @@
-# 🔲 Sabado Gerador de Qr Virtual
+# QR Code Generator
+
+
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)
+
+
+
+
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+
+
+
+
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
+
+
+
+
 ![Tailwind](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
+
+
+
+
 ![Firebase](https://img.shields.io/badge/Firebase-Auth%20%7C%20Firestore%20%7C%20Storage-FFCA28?style=for-the-badge&logo=firebase)
 
-Uma solução **Full-Stack** premium e minimalista para geração e gerenciamento de QR Codes personalizados. Projetado com foco em **minimalismo funcional**, experiência do usuário fluida e acessibilidade avançada.
+
+
+A Full-Stack application for generating and managing customized QR Codes, built with React 19, TypeScript and Firebase. This project goes beyond a simple generator — it offers granular design control, cloud storage, and accessibility features.
 
 ---
 
-## 🚀 O que ele faz?
+## Features
 
-O **Sabado Gerador de Qr Virtual** transforma a simples criação de códigos QR em uma experiência de design. Ele permite que usuários criem códigos visualmente atraentes com gradientes, logotipos personalizados e formas únicas, enquanto oferece um robusto sistema de gerenciamento na nuvem para profissionais e entusiastas.
+#### Design Customization
+- **Granular Styling**: Full control over dot shapes, corners, and frames
+- **Dynamic Gradients**: Linear color gradients for a modern, premium look
+- **Custom Logos**: Upload directly to Cloud Storage to brand your QR Codes
 
-### ✨ Funcionalidades Principais
+#### Cloud Ecosystem (Firebase)
+- **Admin Dashboard**: Restricted area for managing your creations
+- **Persistent History**: Save your favorite designs to Cloud Firestore
+- **Instant Recovery**: Reload saved styles from history with one click
 
-#### 🎨 Customização de Elite
-*   **Estilização Granular**: Controle total sobre formatos de pontos, cantos e molduras.
-*   **Gradientes Dinâmicos**: Aplicação de cores lineares para um visual moderno e premium.
-*   **Logos Personalizados**: Upload direto para o Cloud Storage para centralizar marcas nos QR Codes.
+#### Smart Experience
+- **Voice Control**: Natural language commands to adjust colors and export files
+- **Monochromatic Mode**: Adaptive interface for users with visual sensitivity
+- **Interactive Highlighting**: Assisted navigation system for accessibility
 
-#### ☁️ Ecossistema Cloud (Firebase)
-*   **Admin Dashboard**: Área restrita para gerenciamento de criações.
-*   **Histórico Persistente**: Salve seus designs favoritos no Cloud Firestore.
-*   **Recuperação Instantânea**: Carregue estilos salvos do histórico com um clique.
-
-#### 🎙️ Experiência Inteligente
-*   **Controle por Voz**: Comandos em linguagem natural (PT-BR) para ajustar cores e exportar arquivos.
-*   **Modo Monocromático**: Interface adaptável para usuários com fotofobia ou condições visuais.
-*   **Interactive Highlighting**: Sistema de destaque para navegação assistida e acessibilidade.
-
-#### 📤 Exportação Profissional
-*   Exportação em alta definição nos formatos **PNG**, **JPEG** e **SVG** (vetorial).
+#### Professional Export
+- High-definition export in **PNG**, **JPEG**, and **SVG** formats
 
 ---
 
-## 🛠️ Tecnologias & Bibliotecas
+## Tech Stack
 
-### Core Stack
-- **React 19**: Biblioteca UI para componentes reativos.
-- **Vite**: Build tool ultra-rápida para desenvolvimento moderno.
-- **Tailwind CSS 4**: Estilização baseada em utilitários de última geração.
-- **TypeScript**: Tipagem estática para maior segurança e robustez.
-
-### Principais Bibliotecas
-- **qr-code-styling**: O motor por trás da geração de QRs artísticos.
-- **Motion (Framer Motion)**: Animações de interface fluidas e efeitos 3D.
-- **Lucide React**: Conjunto de ícones minimalistas e consistentes.
-- **Firebase SDK**: Gerenciamento de Autenticação, Banco de Dados e Storage.
+| Layer | Technology |
+|---|---|
+| UI | React 19 + TypeScript |
+| Styling | Tailwind CSS 4 |
+| Build Tool | Vite |
+| QR Generation | qr-code-styling |
+| Animations | Framer Motion |
+| Icons | Lucide React |
+| Backend/Cloud | Firebase (Auth, Firestore, Storage) |
 
 ---
 
-## 📂 Organização do Projeto
-
-A estrutura segue padrões de escalabilidade e separação de preocupações:
-
-```text
-├── src/
-│   ├── components/
-│   │   ├── layout/        # Estrutura base, Header e Acessibilidade
-│   │   └── qrcode/        # Gerador, Painéis e Histórico
-│   ├── lib/
-│   │   └── firebase.ts    # Configuração e Serviços da Nuvem
-│   ├── App.tsx            # Componente raiz e Estado Global
-│   ├── index.css          # Temas Premium e Variáveis Tailwind 4
-│   └── main.tsx           # Entry point
-├── firebase-blueprint.json # Definição da arquitetura de dados
-├── firestore.rules        # Segurança e permissões de banco
-└── metadata.json          # Metadados da aplicação
-```
-
+## Project Structure
+src/
+├── components/
+│   ├── layout/       # Header, base structure and accessibility
+│   └── qrcode/       # Generator, control panels and history
+├── lib/
+│   └── firebase.ts   # Firebase services configuration
+├── App.tsx           # Root component and global state
+├── index.css         # Theme variables and Tailwind 4 utilities
+└── main.tsx          # Entry point
+firebase-blueprint.json  # Data architecture definition
+firestore.rules          # Database security rules
+.env.example             # Environment variables template
 ---
 
-## ⚙️ Como Usar o Repositório
+## Getting Started
 
-### Pré-requisitos
-- Node.js (versão estável mais recente)
-- NPM ou Yarn
+### Prerequisites
 
-### Instalação
+- Node.js (LTS version recommended)
+- A [Firebase](https://firebase.google.com/) account with a project created
 
-1. Clone o repositório:
+### Installation
+
 ```bash
-git clone [url-do-repositorio]
-```
+# Clone the repository
+git clone https://github.com/eduardotorres672/Gerador-de-Qr-code.git
 
-2. Instale as dependências:
-```bash
+# Navigate to the project folder
+cd Gerador-de-Qr-code
+
+# Install dependencies
 npm install
-```
-
-3. Configure as variáveis de ambiente:
-Crie um arquivo `.env` baseado no `.env.example` com suas chaves de API.
-
-### Desenvolvimento
-
-Para iniciar o servidor de desenvolvimento:
-```bash
-npm run dev
-```
-A aplicação estará disponível em `http://localhost:3000`.
-
-### Build
-
-Para gerar a versão de produção:
-```bash
-npm run build
-```
-
----
-
-## 👤 Autor
-
-**Eduardo**  
-📫 Contato: [eduardocosi1810@gmail.com](mailto:eduardocosi1810@gmail.com)
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença [MIT](https://opensource.org/licenses/MIT).
-
----
